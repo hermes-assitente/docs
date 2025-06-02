@@ -16,30 +16,30 @@
 <body>
     <header class="navbar">
         <div class="container">
-            <a href="index.html"><img src="imagens/hermes-removebg-preview.png" alt="Sapato do hermes"></a>
+            <a href="index.html"><img src="imagens/hermes-removebg-preview.png" alt="Sapato do hermes" width="50px"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#hero">Início</a></li>
                     </li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#tutorial">Tutorial</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <h2>O seu assistente pessoal inteligente.</h2>
                 <p>Hermes é o seu parceiro para automatizar tarefas, organizar seu dia e simplificar sua vida com a
                     inteligência do Arduino.</p>
-                <a href="#" class="btn-primary">Saiba Mais</a>
+                <a href="#sobre" class="btn-primary">Saiba Mais</a>
             </div>
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="container">
                 <h3>O que é Hermes?</h3>
                 <p>Hermes é um projeto inovador de assistente pessoal baseado em Arduino, projetado para trazer
@@ -51,7 +51,7 @@
             </div>
         </section>
 
-        <section class="galeria">
+        <section class="galeria" id="galeria">
             <div class="container">
                 <h3>Registros da criação do Hermes</h3>
                 <div class="galeria-imagens">
@@ -60,6 +60,29 @@
                         <source src="imagens/video-hermes.mp4"  type="video/mp4">
                     </video>
                 </div>
+            </div>
+        </section>
+        <section class="tutorial" id="tutorial">
+            <div class="container">
+                <h3>Tutorial de instalação "Hermes"</h3>
+                <ul>
+                    <li>git clone https://github.com/hermes-assitente/processador.git</li>
+                    <li>pip install PyAudio google-genai simpleaudio</li>
+                    <li>python app.py</li>
+                </ul>
+                <p>
+                    <span>Primeiro passo:</span> Clone o repositório pelo link do github disponibilizado no número "1"; <br> <span>Segundo passo:</span> Instale os pacotes disponibilizados no número "2";  <br> <span>Terceiro passo:</span>
+                    Execute o script disponibilizado no número "3". 
+                    </p>
+                <h3>Tutorial de utilização "Hermes"</h3>
+                <ul>
+                    <li>Pressione o botão</li>
+                    <li>Fale o que você deseja enquanto o botão estiver pressionado</li>
+                    <li>Aguarde o "Hermes" gerar uma resposta</li>
+                </ul>
+                <p>
+                    Divirta-se com o <span> "Hermes", seu assistente pessoal inteligente.</span>
+                </p>
             </div>
         </section>
     </main>

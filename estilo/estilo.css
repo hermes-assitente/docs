@@ -13,14 +13,8 @@
     box-sizing: border-box;
 }
 
-img{
-    width: 50px;
-    transition: .2s;
-    cursor: pointer;
-}
-
-img :hover{
-    transform: scale(1.5);
+span{
+    color: var(--laranja-destaque);
 }
 
 body {
@@ -176,13 +170,43 @@ body {
     line-height: 1.8;
 }
 
-footer {
-    background-color: var(--cinza-escuro);
+.galeria{
+    background: linear-gradient(to right, var(--azul-principal), var(--azul-secundario));
     color: white;
+    padding: 100px 0;
     text-align: center;
-    padding: 25px 0;
-    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
 }
+
+.galeria::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.galeria .container {
+    z-index: 2;
+}
+
+.galeria h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .galeria > .container{
     display: flex;
     flex-direction: column;
@@ -200,4 +224,55 @@ footer {
 }
 .galeria-imagens > *{
     border-radius: 12px
+}
+
+.tutorial{
+    padding: 80px 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tutorial h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: var(--azul-principal);
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.tutorial > .container ul{
+    list-style:decimal;
+    text-align: left;
+    justify-items: center;
+}
+
+.tutorial > .container li::marker{
+    color: var(--laranja-destaque);
+}
+
+.tutorial h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--laranja-destaque);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.tutorial p{
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: var(--cinza-escuro);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
 }
