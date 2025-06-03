@@ -1,286 +1,277 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=1, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="estilo/estilo.css" />
-        <title>Hermes</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <title>Hermes</title>
+  </head>
 
-    <body>
-        <header class="navbar">
-            <div class="container">
-                <a href="index.html"
-                    ><img
-                        src="imagens/hermes-removebg-preview.png"
-                        alt="Sapato do hermes"
-                        width="50px"
-                /></a>
-                <nav>
-                    <ul>
-                        <li><a href="#hero">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#tutorial">Tutorial</a></li>
-                        <li><a href="#equipe">Equipe</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html"
+          ><img
+            src="imagens/hermes-removebg-preview.png"
+            alt="Sapato do hermes"
+            width="50px"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <main>
-            <section class="hero" id="hero">
-                <div class="container">
-                    <h2>O seu assistente pessoal inteligente.</h2>
-                    <p>
-                        Hermes é o seu parceiro para automatizar tarefas,
-                        organizar seu dia e simplificar sua vida com a
-                        inteligência do Arduino.
-                    </p>
-                    <a href="#sobre" class="btn-primary">Saiba Mais</a>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <h2>O seu assistente pessoal inteligente.</h2>
+          <p>
+            Hermes é o seu parceiro para automatizar tarefas, organizar seu dia
+            e simplificar sua vida com a inteligência do Arduino.
+          </p>
+          <a href="#sobre" class="btn-primary">Saiba Mais</a>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="container">
+          <h3>O que é Hermes?</h3>
+          <p>
+            Hermes é um projeto inovador de assistente pessoal baseado em
+            Arduino, projetado para trazer inteligência e praticidade para o seu
+            cotidiano. Com recursos personalizáveis e uma interface intuitiva,
+            Hermes se adapta às suas necessidades, tornando a automação de
+            tarefas e a gestão do tempo mais acessíveis do que nunca.
+          </p>
+          <p>
+            Desde lembretes inteligentes até o controle de dispositivos, Hermes
+            está aqui para simplificar seu dia a dia.
+          </p>
+        </div>
+      </section>
+
+      <section class="galeria" id="galeria">
+        <div class="container">
+          <h3>Registros da criação do Hermes</h3>
+          <div class="galeria-imagens">
+            <img
+              src="imagens/foto-grupo.jpeg"
+              style="width: 300px"
+              tecalt="Foto do grupo"
+            />
+            <video controls style="width: 225px">
+              <source src="imagens/video-hermes.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="tutorial" id="tutorial">
+        <div class="container">
+          <h3>Tutorial de instalação "Hermes"</h3>
+
+          <ol class="tutorial-steps">
+            <li>
+              <div class="header">
+                <span class="cont">1.</span>
+                <h1>Clone o repositório</h1>
+              </div>
+
+              <span class="command">
+                git clone https://github.com/hermes-assitente/processador.git
+              </span>
+              <div class="description">
+                Baixe o código do Hermes do GitHub para o seu computador
+              </div>
+            </li>
+
+            <li>
+              <div class="header">
+                <span class="cont">2.</span>
+                <h1>Instale as dependências</h1>
+              </div>
+
+              <span class="command">
+                pip install PyAudio google-genai simpleaudio
+              </span>
+              <div class="description">
+                Instale os pacotes Python necessários para o funcionamento
+              </div>
+            </li>
+
+            <li>
+              <div class="header">
+                <span class="cont">3.</span>
+                <h1>Execute o programa</h1>
+              </div>
+
+              <span class="command">python app.py</span>
+              <div class="description">
+                Inicie o Hermes executando o arquivo principal
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="tutorial" id="utilizar">
+        <div class="container">
+          <h3>Utilização</h3>
+
+          <ol class="tutorial-steps">
+            <li>
+              <div class="header">
+                <span class="cont">1.</span>
+                <h1>Segure o botão e fale</h1>
+              </div>
+            </li>
+
+            <li>
+              <div class="header">
+                <span class="cont">2.</span>
+                <h1>Solte o botão e espere</h1>
+              </div>
+            </li>
+
+            <li>
+              <div class="header">
+                <span class="cont">3.</span>
+                <h1>Aproveite a resposta do Hermes!</h1>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="equipe" id="equipe">
+        <div class="container">
+          <h3>Equipe</h3>
+          <ul class="grid-equipe">
+            <li>
+              <div class="foto">
+                <img src="./imagens/claudio.png" />
+              </div>
+              <div class="member-info">
+                <p>Claudio Silva</p>
+                <div class="social-links">
+                  <a href="https://github.com/SilvaClaudioo" target="_blank"
+                    >GitHub</a
+                  >
                 </div>
-            </section>
-
-            <section class="sobre" id="sobre">
-                <div class="container">
-                    <h3>O que é Hermes?</h3>
-                    <p>
-                        Hermes é um projeto inovador de assistente pessoal
-                        baseado em Arduino, projetado para trazer inteligência e
-                        praticidade para o seu cotidiano. Com recursos
-                        personalizáveis e uma interface intuitiva, Hermes se
-                        adapta às suas necessidades, tornando a automação de
-                        tarefas e a gestão do tempo mais acessíveis do que
-                        nunca.
-                    </p>
-                    <p>
-                        Desde lembretes inteligentes até o controle de
-                        dispositivos, Hermes está aqui para simplificar seu dia
-                        a dia.
-                    </p>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/eduardo.png" />
+              </div>
+              <div class="member-info">
+                <p>Eduardo Borges</p>
+                <div class="social-links">
+                  <a href="https://github.com/Eduardo-Borges18" target="_blank"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/eduardo-borges-cordeiro-de-oliveira-carlos-bba70a355"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
                 </div>
-            </section>
-
-            <section class="galeria" id="galeria">
-                <div class="container">
-                    <h3>Registros da criação do Hermes</h3>
-                    <div class="galeria-imagens">
-                        <img
-                            src="imagens/foto-grupo.jpeg"
-                            style="width: 300px"
-                            tecalt="Foto do grupo"
-                        />
-                        <video controls style="width: 225px">
-                            <source
-                                src="imagens/video-hermes.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    </div>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/luiz.png" />
+              </div>
+              <div class="member-info">
+                <p>Luiz Henrique</p>
+                <div class="social-links">
+                  <a href="https://github.com/luizrocha0" target="_blank" u
+                    >GitHub</a
+                  >
                 </div>
-            </section>
-            <section class="tutorial" id="tutorial">
-                <div class="container">
-                    <h3>Tutorial de instalação "Hermes"</h3>
-
-                    <ol class="tutorial-steps">
-                        <li>
-                            <div class="header">
-                                <span class="cont">1.</span>
-                                <h1>Clone o repositório</h1>
-                            </div>
-
-                            <span class="command">
-                                git clone
-                                https://github.com/hermes-assitente/processador.git
-                            </span>
-                            <div class="description">
-                                Baixe o código do Hermes do GitHub para o seu
-                                computador
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="header">
-                                <span class="cont">2.</span>
-                                <h1>Instale as dependências</h1>
-                            </div>
-
-                            <span class="command">
-                                pip install PyAudio google-genai simpleaudio
-                            </span>
-                            <div class="description">
-                                Instale os pacotes Python necessários para o
-                                funcionamento
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="header">
-                                <span class="cont">3.</span>
-                                <h1>Execute o programa</h1>
-                            </div>
-
-                            <span class="command">python app.py</span>
-                            <div class="description">
-                                Inicie o Hermes executando o arquivo principal
-                            </div>
-                        </li>
-                    </ol>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/guga.png" />
+              </div>
+              <div class="member-info">
+                <p>Gustavo Cassemiro</p>
+                <div class="social-links">
+                  <a href="https://github.com/Gustavo-Cassemiro" target="_blank"
+                    >GitHub</a
+                  >
                 </div>
-            </section>
-            <section class="tutorial" id="utilizar">
-                <div class="container">
-                    <h3>Utilização</h3>
-
-                    <ol class="tutorial-steps">
-                        <li>
-                            <div class="header">
-                                <span class="cont">1.</span>
-                                <h1>Segure o botão e fale</h1>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="header">
-                                <span class="cont">2.</span>
-                                <h1>Solte o botão e espere</h1>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="header">
-                                <span class="cont">3.</span>
-                                <h1>Aproveite a resposta do Hermes!</h1>
-                            </div>
-                        </li>
-                    </ol>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/luan.png" />
+              </div>
+              <div class="member-info">
+                <p>Luan Guedes</p>
+                <div class="social-links">
+                  <a href="https://github.com/RyuuNoTenshi" target="_blank"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/luan-guedes-9a8366365"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
                 </div>
-            </section>
-
-            <section class="equipe" id="equipe">
-                <div class="container">
-                    <h3>Equipe</h3>
-                    <ul class="grid-equipe">
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/claudio.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Claudio Silva</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/SilvaClaudioo"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/eduardo.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Eduardo Borges</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/Eduardo-Borges18"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                    <a
-                                        href="https://www.linkedin.com/in/eduardo-borges-cordeiro-de-oliveira-carlos-bba70a355"
-                                        target="_blank"
-                                        >LinkedIn</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/luiz.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Luiz Henrique</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/luizrocha0"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/guga.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Gustavo Cassemiro</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/Gustavo-Cassemiro"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/luan.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Luan Guedes</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/RyuuNoTenshi"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                    <a
-                                        href="https://www.linkedin.com/in/luan-guedes-9a8366365"
-                                        target="_blank"
-                                        >LinkedIn</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="foto">
-                                <img src="./imagens/giuliano.png" />
-                            </div>
-                            <div class="member-info">
-                                <p>Giuliano Minelli</p>
-                                <div class="social-links">
-                                    <a
-                                        href="https://github.com/giulianoo0"
-                                        target="_blank"
-                                        >GitHub</a
-                                    >
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/giuliano.png" />
+              </div>
+              <div class="member-info">
+                <p>Giuliano Minelli</p>
+                <div class="social-links">
+                  <a href="https://github.com/giulianoo0" target="_blank"
+                    >GitHub</a
+                  >
                 </div>
-            </section>
-        </main>
+              </div>
+            </li>
+            <li>
+              <div class="foto">
+                <img src="./imagens/joao.png" />
+              </div>
+              <div class="member-info">
+                <p>João Vinicius</p>
+                <div class="social-links">
+                  <a href="https://github.com/sucogelad0" target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 Projeto Hermes. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-    </body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Projeto Hermes. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
